@@ -1,16 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <RootNamespace>Temporal.Api</RootNamespace>
+    <Title>Temporal Api for .net</Title>
+    <Description>This is an unofficial, work in progress, Temporal API package for .net</Description>
+    <RepositoryUrl>https://github.com/icanhasjonas/temporal-api-dotnet</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
-    <Protobuf
-            Include="../lib/api/**/*.proto"
-            ProtoRoot="../lib/api"
-            Link="proto\%(RecursiveDir)"
-            GrpcServices="Client" />
+    <Protobuf Include="../lib/api/**/*.proto" ProtoRoot="../lib/api" Link="proto\%(RecursiveDir)" GrpcServices="Client" />
   </ItemGroup>
 
   <ItemGroup>
