@@ -1,0 +1,4 @@
+[submodule "lib/api"]
+	path = lib/api
+	url = git@github.com:icanhasjonas/api.git
+	branch = master

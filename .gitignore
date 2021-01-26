@@ -1,0 +1,12 @@
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+.vs/
+.vscode/
+bin/
+obj/
+
+# Waypoint
+.waypoint
